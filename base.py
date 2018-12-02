@@ -1,9 +1,11 @@
 import sys
 
-def part_one():
+def part_one(lines):
+    print("part one")
     pass
 
-def part_two():
+def part_two(lines):
+    print("part two")
     pass
 
 def main():
@@ -14,6 +16,8 @@ def main():
     else:
         for line in sys.stdin:
             input_lines.append(line)
+    part_one(input_lines)
+    part_two(input_lines)
 
 if __name__ == "__main__":
     main()
