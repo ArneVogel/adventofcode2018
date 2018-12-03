@@ -35,7 +35,8 @@ def part_two(lines):
     areas = {}
     valid_areas = set()
     for line_number, line in enumerate(lines):
-        valid_areas.add(line_number+1) # line numbers start at 1
+        line_number += 1
+        valid_areas.add(line_number) # line numbers start at 1
         split_line = line.split(" ")
         offsetX = int(split_line[2].split(",")[0])
         offsetY = int(split_line[2].split(",")[1].replace(":", ""))
